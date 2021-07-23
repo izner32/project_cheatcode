@@ -1,0 +1,9 @@
+@import "./../App.scss";
+
+.footer {
+    @include flexCenter();
+
+    &__div1-text{
+        
+    }
+}

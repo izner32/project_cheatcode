@@ -1,0 +1,17 @@
+.nav {
+    position: sticky;
+    top: 0;
+    padding: 8px;
+    font-size: 5em;
+
+    &__webdev {
+    }
+
+    &__datascie {
+        margin-left: 2em;
+    }
+
+    &__proglang {
+        margin-left: 2em;
+    }
+}

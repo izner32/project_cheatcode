@@ -1,0 +1,26 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*content-box is the default, border-box is referring to the height and width of the border of the box; */
+}
+
+html *,
+html *:before,
+html *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* centering content using flex */
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=Footer.css.map */
