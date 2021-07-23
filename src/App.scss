@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box; /*content-box is the default, border-box is referring to the height and width of the border of the box; */
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+}
+
+body {
+    background-color: #6c15ba;
+    color: #14f1cb;
+    margin: 0;
+    font-family: "Fjalla One", sans-serif;
+
+    hr {
+        border-color: #14f1cb;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+        color: #14f1cb;
+    }
+
+    a:visited {
+        color: #14f1cb;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    a:active {
+        color: #14f1cb;
+    }
+}
+
+/* centering content using flex */
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
