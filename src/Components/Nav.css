@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -15,7 +16,7 @@ body {
   background-color: #6c15ba;
   color: #14f1cb;
   margin: 0;
-  font-family: "Fjalla One", sans-serif;
+  font-family: 'Recursive', sans-serif;
 }
 
 body hr {
@@ -46,9 +47,19 @@ body a:active {
 .nav {
   position: -webkit-sticky;
   position: sticky;
+  height: 50px;
   top: 0;
   padding: 8px;
   border-bottom: 2px solid #14f1cb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav__datascie {

@@ -2,9 +2,11 @@
 
 .nav {
     position: sticky;
+    height: 50px;
     top: 0;
     padding: 8px;
     border-bottom: 2px solid #14f1cb;
+    @include flexCenter();
 
     &__webdev {
     }
