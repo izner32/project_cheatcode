@@ -1,13 +1,14 @@
 import React from 'react';
-//  import { Link } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
+import "./Nav.css"
 
 function Nav() {
     return (
         <div>
             <header className ="nav">
-                {/* <Link to="/" className = "nav__webdev">Web Dev</Link>
-                <Link to="/" className = "nav__datascie">Data Scie</Link>
-                <Link to="/" className = "nav__proglang">Prog Lang</Link> */}
+                <a className = "nav__webdev">Web Dev</a>
+                <a className = "nav__datascie">Data Scie</a>
+                <a className = "nav__proglang">Prog Lang</a>
             </header>
         </div>
     )

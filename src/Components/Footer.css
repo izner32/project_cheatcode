@@ -11,6 +11,37 @@ html *:after {
           box-sizing: inherit;
 }
 
+body {
+  background-color: #6c15ba;
+  color: #14f1cb;
+  margin: 0;
+  font-family: "Fjalla One", sans-serif;
+}
+
+body hr {
+  border-color: #14f1cb;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body a:link {
+  color: #14f1cb;
+}
+
+body a:visited {
+  color: #14f1cb;
+}
+
+body a:hover {
+  color: white;
+}
+
+body a:active {
+  color: #14f1cb;
+}
+
 /* centering content using flex */
 .footer {
   display: -webkit-box;

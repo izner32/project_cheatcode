@@ -1,8 +1,10 @@
+@import "./../App.scss";
+
 .nav {
     position: sticky;
     top: 0;
     padding: 8px;
-    font-size: 5em;
+    border-bottom: 2px solid #14f1cb;
 
     &__webdev {
     }

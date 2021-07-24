@@ -1,0 +1,28 @@
+@import "./../App.scss";
+
+.section {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "div1 div2";
+    border-bottom: 2px solid #14f1cb;
+
+    &__div1 {
+        grid-area: div1;
+        @include flexCenter();
+
+        &__list {
+            &__title {
+            }
+
+            &__item {
+            }
+        }
+    }
+
+    &__div2 {
+        grid-area: div2;
+        @include flexCenter();
+        flex-direction: column;
+    }
+}
