@@ -1,9 +1,54 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*content-box is the default, border-box is referring to the height and width of the border of the box; */
+}
+
+html *,
+html *:before,
+html *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #6c15ba;
+  color: #14f1cb;
+  margin: 0;
+  font-family: "Fjalla One", sans-serif;
+}
+
+body hr {
+  border-color: #14f1cb;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body a:link {
+  color: #14f1cb;
+}
+
+body a:visited {
+  color: #14f1cb;
+}
+
+body a:hover {
+  color: white;
+}
+
+body a:active {
+  color: #14f1cb;
+}
+
+/* centering content using flex */
 .nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding: 8px;
-  font-size: 5em;
+  border-bottom: 2px solid #14f1cb;
 }
 
 .nav__datascie {
