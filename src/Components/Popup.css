@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -15,7 +16,7 @@ body {
   background-color: #6c15ba;
   color: #14f1cb;
   margin: 0;
-  font-family: "Fjalla One", sans-serif;
+  font-family: 'Recursive', sans-serif;
 }
 
 body hr {
@@ -43,4 +44,29 @@ body a:active {
 }
 
 /* centering content using flex */
+.pop-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 75%;
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+.pop-up__header {
+  height: 15%;
+}
+
+.pop-up__content {
+  height: 70%;
+}
+
+.pop-up__view {
+  height: 15%;
+}
 /*# sourceMappingURL=Popup.css.map */
