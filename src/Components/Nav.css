@@ -45,10 +45,9 @@ body a:active {
 
 /* centering content using flex */
 .nav {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   height: 50px;
-  top: 0;
+  left: 0;
   padding: 8px;
   border-bottom: 2px solid #14f1cb;
   display: -webkit-box;
