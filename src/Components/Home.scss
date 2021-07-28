@@ -28,11 +28,18 @@
             &__item {
                 line-height:1.5em;
                 list-style: none;
+                display:flex;
+                justify-content:flex-start;
 
-                a:hover {
+                button {
+                    text-align:start;
+                }
+                
+                button:hover {
                     background-color: #14f1cb;
                 }
             }
+
 
 
         }

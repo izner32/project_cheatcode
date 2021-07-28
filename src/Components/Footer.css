@@ -43,6 +43,33 @@ body a:active {
   color: #14f1cb;
 }
 
+body button {
+  text-decoration: none;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  outline: inherit;
+}
+
+body button:link {
+  color: #14f1cb;
+}
+
+body button:visited {
+  color: #14f1cb;
+}
+
+body button:hover {
+  color: white;
+}
+
+body button:active {
+  color: #14f1cb;
+}
+
 /* centering content using flex */
 .footer {
   display: -webkit-box;

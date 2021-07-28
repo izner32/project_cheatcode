@@ -43,6 +43,33 @@ body a:active {
   color: #14f1cb;
 }
 
+body button {
+  text-decoration: none;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  outline: inherit;
+}
+
+body button:link {
+  color: #14f1cb;
+}
+
+body button:visited {
+  color: #14f1cb;
+}
+
+body button:hover {
+  color: white;
+}
+
+body button:active {
+  color: #14f1cb;
+}
+
 /* centering content using flex */
 .nav {
   position: fixed;
@@ -61,11 +88,17 @@ body a:active {
           align-items: center;
 }
 
+.nav__webdev {
+  cursor: pointer;
+}
+
 .nav__datascie {
+  cursor: pointer;
   margin-left: 2em;
 }
 
 .nav__proglang {
+  cursor: pointer;
   margin-left: 2em;
 }
 /*# sourceMappingURL=Nav.css.map */
