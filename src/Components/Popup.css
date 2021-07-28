@@ -45,28 +45,98 @@ body a:active {
 
 /* centering content using flex */
 .pop-up {
+  background-color: #14f1cb;
+  color: #6c15ba;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  /* scale is 0 because we don't want this to show yet */
   height: 75%;
   width: 50%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-rows: 5% 90% 5%;
+      grid-template-rows: 5% 90% 5%;
+  z-index: 1;
 }
 
 .pop-up__header {
-  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.pop-up__header__title {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  margin-left: 0.5em;
+  margin-top: 0.2em;
+}
+
+.pop-up__header__button {
+  margin-right: 0.5em;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
 }
 
 .pop-up__content {
-  height: 70%;
+  background-color: white;
+  margin: 0.5em;
+  overflow: auto;
+}
+
+.pop-up__content__text {
+  margin: 0.5em;
+  font-size: 0.7rem;
+  color: black;
 }
 
 .pop-up__view {
-  height: 15%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.pop-up__view__text {
+  margin: 0;
+  margin-right: 0.3em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  right: 0;
+}
+
+.pop-up__view a:link,
+.pop-up__view a:visited {
+  color: #6c15ba;
+}
+
+.pop-up--active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.overlay--active {
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 /*# sourceMappingURL=Popup.css.map */

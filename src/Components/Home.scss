@@ -1,5 +1,14 @@
 @import "./../App.scss";
 
+.home-wrap{
+    
+    &__content{
+        width:95%;
+        margin: 0 auto;
+    }
+
+}
+
 .section {
     height: 600px;
     display: grid;
@@ -12,11 +21,20 @@
         @include flexCenter();
 
         &__list {
+            
             &__title {
             }
 
             &__item {
+                line-height:1.5em;
+                list-style: none;
+
+                a:hover {
+                    background-color: #14f1cb;
+                }
             }
+
+
         }
     }
 
@@ -24,5 +42,18 @@
         grid-area: div2;
         @include flexCenter();
         flex-direction: column;
+
+        &__bg{
+            width:7em;
+            height:2em;
+            background-color:#14f1cb;
+            @include flexCenter();
+            border-radius: 5%;
+
+            &__text{
+                margin: 0 auto;
+            }
+        }
+
     }
 }

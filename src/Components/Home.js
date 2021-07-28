@@ -4,22 +4,24 @@ import WebDev from './WebDev';
 import DataScie from './DataScie';
 import ProgLang from './ProgLang';
 import Footer from "./Footer";
+import Popup from "./Popup";
 
 function Home() {
     return (
-        <>
+        <div className="home-wrap">
             <div> {/* header */}
                 <Nav />
             </div>
-            <div> {/* content */}
-               <WebDev />
-               <DataScie />
-               <ProgLang />
+            <div className="home-wrap__content"> {/* content */}
+                <WebDev />
+                <DataScie />
+                <ProgLang />
+                {/* <Popup />  */}
             </div>
             <div> {/* footer */}
                 <Footer />
             </div>
-        </>
+        </div>
     )
 }
 

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -15,7 +16,7 @@ body {
   background-color: #6c15ba;
   color: #14f1cb;
   margin: 0;
-  font-family: "Fjalla One", sans-serif;
+  font-family: 'Recursive', sans-serif;
 }
 
 body hr {
@@ -43,6 +44,11 @@ body a:active {
 }
 
 /* centering content using flex */
+.home-wrap__content {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .section {
   height: 600px;
   display: -ms-grid;
@@ -68,6 +74,15 @@ body a:active {
           align-items: center;
 }
 
+.section__div1__list__item {
+  line-height: 1.5em;
+  list-style: none;
+}
+
+.section__div1__list__item a:hover {
+  background-color: #14f1cb;
+}
+
 .section__div2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -85,5 +100,25 @@ body a:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.section__div2__bg {
+  width: 7em;
+  height: 2em;
+  background-color: #14f1cb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5%;
+}
+
+.section__div2__bg__text {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=Home.css.map */
