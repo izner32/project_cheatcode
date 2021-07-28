@@ -9,15 +9,17 @@
     @include flexCenter();
 
     &__webdev {
+        cursor:pointer;
 
     }
 
     &__datascie {
+        cursor:pointer;
         margin-left: 2em;
     }
 
     &__proglang {
-
+        cursor:pointer;
         margin-left: 2em;
     }
 }

@@ -3,7 +3,8 @@ import "./Home.css";
 import Popup from './Popup';
 
 function WebDev() {
-    // const [pageContent,setPageContent] = useState("");
+    const [isOpen, setIsOpen] = useState(false);
+    const [content, setContent] = useState("");
 
     return (
         <div>
@@ -12,25 +13,32 @@ function WebDev() {
                     <ul className="section__div1__list">
                         <p className="section__div1__list__title">Web Development Cheatcodes</p>
                         <li className="section__div1__list__item">
-                            <a>HTML Lessons</a>
+                            <button onClick = { () => { setIsOpen(true); setContent("html") }}>HTML Lessons</button>
+                            <Popup status = {isOpen} setIsOpen = {setIsOpen} content = {content}/>
                         </li>
                         <li className="section__div1__list__item">
-                            <a href = "https://github.com/izner32/Full-Stack-Web-Development/blob/main/css_lessons.css">CSS Lessons</a>
+                            <button onClick = { () => { setIsOpen(true); setContent("css") } }>CSS Lessons</button>
+                            <Popup status = {isOpen} setIsOpen = {setIsOpen} content ={content}/>
                         </li>
                         <li className="section__div1__list__item">
-                            <a href = "https://github.com/izner32/Full-Stack-Web-Development/blob/main/javascript_lesson.js">Javascript Lessons</a>
+                            <button onClick = { () => { setIsOpen(true); setContent("javascript") } }>Javascript Lessons</button>
+                            <Popup status = {isOpen} setIsOpen = {setIsOpen} content ={content}/>
                         </li>
                         <li className="section__div1__list__item">
-                            <a href = "">ReactJS Lessons</a>
+                            <button onClick = { () => { setIsOpen(true); setContent("react") } }>ReactJS Lessons</button>
+                            <Popup status = {isOpen} setIsOpen = {setIsOpen} content ={content}/>
                         </li>
                         <li className="section__div1__list__item">
-                            <a href = "">NodeJS Lessons</a>
+                            <button onClick = { () => { setIsOpen(true); setContent("node") } }>NodeJS Lessons</button>
+                            <Popup status = {isOpen} setIsOpen = {setIsOpen} content ={content}/>
                         </li>
                         <li className="section__div1__list__item">
-                            <a href = "">ExpressJS Lessons</a>
+                            <button onClick = { () => { setIsOpen(true); setContent("express") } }>ExpressJS Lessons</button>
+                            <Popup status = {isOpen} setIsOpen = {setIsOpen} content ={content}/>
                         </li>
                         <li className="section__div1__list__item">
-                            <a href = "">Git Lessons</a>
+                            <button onClick = { () => { setIsOpen(true); setContent("git") } }>Git Lessons</button>
+                            <Popup status = {isOpen} setIsOpen = {setIsOpen} content ={content}/>
                         </li>
                     </ul>
                 </div>

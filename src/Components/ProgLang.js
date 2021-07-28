@@ -1,7 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react';
 import "./Home.css";
+import Popup from "./Popup";
 
 function ProgLang() {
+    const [isOpen, setIsOpen] = useState(false);
+    const [content, setContent] = useState("");
+
     return (
         <div>
             <section className="section" id = "section1">
@@ -9,19 +13,24 @@ function ProgLang() {
                     <ul className="section__div1__list">
                         <p className="section__div1__list__title">Programming Language Cheatcodes</p>
                         <li className="section__div1__list__item">
-                            <a href="#">Python</a>
+                            <button onClick = { () => { setIsOpen(true); setContent("python") } }>Python Lessons</button>
+                            <Popup status = {isOpen} setIsOpen = {setIsOpen} content ={content}/>
                         </li>
                         <li className="section__div1__list__item">
-                            <a href="#">Java</a>
+                            <button onClick = { () => { setIsOpen(true); setContent("java") } }>Java Lessons</button>
+                            <Popup status = {isOpen} setIsOpen = {setIsOpen} content ={content}/>
                         </li>
                         <li className="section__div1__list__item">
-                            <a href="#">C++</a>
+                            <button onClick = { () => { setIsOpen(true); setContent("cpp") } }>C++ Lessons</button>
+                            <Popup status = {isOpen} setIsOpen = {setIsOpen} content ={content}/>
                         </li>
                         <li className="section__div1__list__item">
-                            <a href="#">SQL (MySQL)</a>
+                            <button onClick = { () => { setIsOpen(true); setContent("mysql") } }>MySQL Lessons</button>
+                            <Popup status = {isOpen} setIsOpen = {setIsOpen} content ={content}/>
                         </li>
                         <li className="section__div1__list__item">
-                            <a href="#">NoSQL (MongoDB)</a>
+                            <button onClick = { () => { setIsOpen(true); setContent("mongodb") } }>MongoDB Lessons</button>
+                            <Popup status = {isOpen} setIsOpen = {setIsOpen} content ={content}/>
                         </li>
                     </ul>
                 </div>
